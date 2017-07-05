@@ -238,21 +238,88 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* Mobile */ 
-@media only screen 
-and (max-width: 640px) {
-  /* Add style here */
+/* Desktops and laptops */
+@media only screen and (max-width: 980px) and (min-width: 769px) {
+
+  #logo {
+    margin-left: 100px;
+  }
+
+  .main-section {
+    margin-left: 100px;
+    max-width: 450px;
+  }
+
+  .auth-image {
+    width: 385px;
+  }
+
+  .sidebar {
+    margin-right: 100px;
+  }
+
+  nav {
+    margin-right: 100px;
+  }
 }
+
 
 /* Tablets */
-@media only screen 
-and (max-width: 768px) {
-  /* Add style here */
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+  #logo {
+    margin-left: 30px;
+  }
+
+  nav {
+    margin-right: 30px;
+  }
+
+  .main-section {
+    max-width: 700px;
+    margin: 0px 30px;
+  }
+
+  .auth-image {
+    width: 385px;
+  }
+
+  .sidebar {
+    max-width: 700px;
+    float: left;
+    margin: 20px 30px;
+  }
 }
 
 
-/* Desktops and laptops */
-@media only screen 
-and (max-width: 980) {
-  /* Add style here */
+/* Mobile */ 
+@media only screen and (max-width: 640px) {
+   #logo {
+    width: 100%;
+  }
+
+  nav {
+    margin-right: 50px;
+  }
+
+  nav a {
+    padding: 5px 50px 10px;
+    margin: 0px 0px 10px;
+  }
+
+  .main-section {
+    max-width: 600px;
+    float: left;
+    margin: 10px 10px 40px 20px;
+  }
+
+  .auth-image {
+    width: 535px;
+  }
+
+  .sidebar {
+    max-width: 600px;
+    float: left;
+    margin: 10px 10px 40px 20px;
+  }
 }
+
